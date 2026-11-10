@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #142d5c, #2878c8);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+.container {
+    background: white;
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px #0002;
+    animation: appear 0.7s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #183b70;
+}
+
+.subtitle {
+    color: gray;
+    margin: 10px 0 25px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #2878c8;
+    box-shadow: 0 0 5px #2878c855;
+}
+
+button {
+    background: #246bc0;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #164a8b;
+    transform: translateY(-2px);
+}
+
+.list-title {
+    margin: 40px 0 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #183b70;
+    color: white;
+}
+
+.delete-btn {
+    background: #dc3545;
+    padding: 8px 12px;
+    width: auto;
+    margin: 0;
+}
+
+.delete-btn:hover {
+    background: #a71d2a;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+  
